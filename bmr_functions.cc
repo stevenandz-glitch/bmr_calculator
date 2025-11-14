@@ -8,7 +8,11 @@
 BMR::BMR(double weight, double height, int age) noexcept
     : weight_{weight}, height_{height}, age_{age} {}
 
-BMR::~BMR() {}
+BMR::~BMR() {
+  weight_ = 0;
+  height_ = 0;
+  age_ = 0;
+}
 
 const double BMR::GetWeight() const {
   return weight_;
