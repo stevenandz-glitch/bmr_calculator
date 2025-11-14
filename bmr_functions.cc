@@ -52,8 +52,11 @@ data PromptForInput(const std::string& prompt) {
     std::cin >> input;
     if (!std::cin) {
       std::cin.clear();
-      std::cout << "\033[1;32m<< Please Try Again >>\033[0m\n";
+      std::cout << "\033[1;31m<< Please Try Again >>\033[0m\n";
       std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+      continue;
+    } else if (input < 0) {
+      std::cout << "\033[1;31m<< Value Cannot Be Less Than 0 >>\033[0m\n";
       continue;
     }
     return input;
