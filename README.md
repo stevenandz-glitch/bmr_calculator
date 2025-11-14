@@ -48,7 +48,7 @@ parent_bmr->CalculateBMR();
 ```
 
 ## SAMPLE OUTPUT
-1. Complile: *`g++ -o main main.cc`*
+1. Compile: *`g++ -o main main.cc`*
 2. Run: *`./main`*
 ```
 === BMR CALCULATOR ===
